@@ -1,0 +1,80 @@
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #154360;
+  text-align: center;
+}
+
+
+.location {
+  width:100%;
+  margin:auto;
+
+}
+.location iframe {
+  width: 100%;
+}
+.contact-us {
+  width:100%;
+  margin:auto;
+}
+
+.contact-col {
+  flex-basis:48%;
+  margin-bottom:30px;
+}
+
+.contact-col div {
+  display:flex;
+  align-items:center;
+  margin-bottom:40px;
+}
+
+.contact-col div i {
+  font-size: 28px;
+  color: #f9004d;
+  margin:10px;
+  margin-right:30px;
+}
+.contact-col div p{
+  padding:0;
+
+}
+
+.contact-col div h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #101C32;
+  font-weight:600;
+
+}
+.contact-col div .icons .fa {
+  color: white;
+  background-color: #101C32;
+
+}
+
+
+.contact-col input, .contact-col textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #B2BABB;
+}
+
+.send-btn{
+  margin: 20px;
+  float: right;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #031314;
+  border: none;
+}
+
+.send-btn:hover{
+  background-color: #465354;
+  border: none;
+}

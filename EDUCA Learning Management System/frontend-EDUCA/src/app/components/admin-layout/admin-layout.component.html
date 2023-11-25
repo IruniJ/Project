@@ -1,0 +1,30 @@
+
+
+<div id="mySidenav" class="sidenav">
+  <img class="logo" src="/assets/img/logo.png">
+  <a routerLink="/admin/dashboard" class="active"   ><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a>
+  <a routerLink="/admin/students"  ><i class="fa fa-fw fa-user"></i>Students</a>
+  <a routerLink="/admin/grades"  ><i class="fa fa-users"></i>Grades</a>
+  <a routerLink="/admin/subjects"><i class="fa fa-calculator" ></i>Subjects</a>
+  <a routerLink="/admin/time-table"><i class="fa fa-calendar" ></i>Time Table</a>
+  <a routerLink="/admin/contact"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+</div>
+
+
+
+
+<button routerLink="/login" type="button" class="btn btn-danger logout-btn" (click)="logout()">Logout</button>
+<div class="data-page" >
+
+
+  <h5>Hello {{userDetails.userName}} !</h5>
+  <h2 style="font-family: 'Poppins', sans-serif; font-weight: 600">Welcome to EDUCA</h2>
+
+
+  <div class="card" >
+    <div class="card-body">
+  <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+

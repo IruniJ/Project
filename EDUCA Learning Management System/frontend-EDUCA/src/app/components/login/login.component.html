@@ -1,0 +1,28 @@
+
+<div class="login-back">
+  <div class="logbox">
+    <div class="login-style">
+
+  <img style="width: 350px; margin-left: 55px" src="/assets/img/logo.png">
+
+  <form [formGroup]="loginForm">
+
+
+    <div class="input-group mb-3 "style="width: 300px; margin-left: 50px;">
+      <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+      <input  type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" formControlName="userName">
+    </div>
+
+    <div class="input-group mb-3"style="width: 300px; margin-left: 50px;">
+      <span class="input-group-text" id="basic-addon2"><i class="fa fa-key" ></i></span>
+      <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2"formControlName="password">
+    </div>
+
+  </form>
+  <button type="button" class="btn btn-danger login-btn" (click)="onLogin()"[disabled]="!isValid()" >Login</button>
+
+    </div>
+</div>
+</div>
+
+

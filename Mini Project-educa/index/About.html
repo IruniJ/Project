@@ -1,0 +1,241 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css" >
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<body>
+
+		<!--Header-->
+		<nav class="navbar">
+			<div class="content">
+				<div class="logo">
+					<a href="#"><img src="images/logo.png" alt=""></a>
+				</div>
+
+
+				<ul class="menu-list">
+					<div class="icon cancel-btn">
+						<i class="fas fa-times"></i>
+
+
+					</div>
+
+					<li><a href="index page.php">HOME</a></li>
+					<li><a href="About.html">ABOUT</a></li>
+					<li><a href="Contact.php">CONTACT</a></li>
+					<li><a href="Tutorial.html">TUTORIALS</a></li>
+					<li><a href="Time table.html">TIME TABLE</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+
+					<div class="form-page-btn">
+
+						<a class="form-btn" href="login_form.php" class="btn">Login</a>
+						<a class="form-btn" href="register_form.php" class="btn">Register</a>
+
+					</div>
+
+
+				</ul>
+
+				<div class="icon menu-btn">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
+		</nav>
+
+
+		<!--Teacher information-->
+		<section id="about-home">
+			<h1>About Educa</h1>
+
+		</section>
+		<br>
+		<br>
+
+		<section class="about">
+			<div class="main">
+				<img src="images/post/statement.jpg">
+				<div class="about-text">
+					<h1>About Teacher</h1>
+					<h4>Government School Teacher</h4>
+
+					<p>
+						I have been teaching science and mathematics in an English medium government school for many years in government school, and I'm also conduct tution classes in those subjects. Currently, I am teaching science and mathematics in English medium for grade 6 to grade 9 students.Since I spent a year studying these subjects in depth, I have a clear understanding of the school subject recommendations and each student in these subjects.
+						<br>
+						<br>
+						Furthermore, I am involved in concurrent activities with subjects in order to provide practical knowledge and introduce unique strategies for children in the field of mathematics.
+					</p>
+					<button type="button">Learn More</button>
+				</div>
+			</div>
+
+		</section>
+
+		<!--Subjects-->
+
+		<section id="subjects">
+
+			<h1>Subjects</h1>
+			<p>We are doing teaching activities for your children in English medium for the subject of science and developing the child's mind by providing sets of books related to those two subjects and various activities simultaneously.</p>
+
+			<div class="row">
+				<div class="subject-col">
+					<i class="fa fa-flask"></i>
+					<h3>Science</h3>
+					<p>All the teaching activities related to the science subject are completed in the relevant term and the subject is also guided on the simultaneous experiment procedures and how it can be used in practical life.</p>
+				</div>
+
+				<div class="subject-col">
+					<i class="fa fa-calculator"></i>
+					<h3>Mathematics</h3>
+					<p>All the teaching related to mathematics will be completed in the relevant term and we will work to provide the child with the mathematical environment that makes it necessary to solve the problems related to the subject along with new methods. With this, we would like to open new paths by expanding the logical intellect in the child.</p>
+				</div>
+
+			</div>
+
+		</section>
+
+		<!--Grades-->
+		<section id="grades">
+			<h1>Grades</h1>
+			<p>We teach science and mathematics subjects in English to children in the following classes with best experiences.</p>
+
+			<div class="row">
+				<div class="grade-col">
+					<img src="images/grade-back.jpg">
+					<a href="tutorial.html">
+						<div class="layer">
+							<h2>
+								Grade 6
+							</h2>
+						</div>
+					</a>
+				</div>
+
+				<div class="grade-col">
+					<img src="images/grade-back.jpg">
+					<a href="tutorial.html">
+						<div class="layer">
+							<h2>
+								Grade 7
+							</h2>
+						</div>
+					</a>
+				</div>
+
+				<div class="grade-col">
+					<img src="images/grade-back.jpg">
+					<a href="tutorial.html">
+						<div class="layer">
+							<h2>
+								Grade 8
+							</h2>
+						</div>
+					</a>
+				</div>
+
+				<div class="grade-col">
+					<img src="images/grade-back.jpg">
+					<a href="tutorial.html">
+						<div class="layer">
+							<h2>
+								Grade 9
+							</h2>
+						</div>
+					</a>
+				</div>
+			</div>
+
+		</section>
+
+
+		<!--Cancel and Menu button js-->
+		<script>
+			const body = document.querySelector("body");
+			const navbar = document.querySelector(".navbar");
+			const menuBtn = document.querySelector(".menu-btn");
+			const cancelBtn = document.querySelector(".cancel-btn");
+
+			menuBtn.onclick = () => {
+				navbar.classList.add("show");
+				menuBtn.classList.add("hide");
+				body.classList.add("disabled");
+			}
+
+			cancelBtn.onclick = () => {
+				body.classList.remove("disabled");
+				navbar.classList.remove("show");
+				menuBtn.classList.remove("hide");
+			}
+
+			window.onscroll = () => {
+				this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+			}
+
+		</script>
+
+		<!--footer-->
+
+		<section>
+			<footer class="footer">
+				<div class="footer-col">
+					<h3>Grades</h3>
+					<li><a href="tutorial.html">Grade 06</a></</li>
+					<li><a href="tutorial.html">Grade 07</a></</li>
+					<li><a href="tutorial.html">Grade 08</a></</li>
+					<li><a href="tutorial.html">Grade 09</a></</li>
+				</div>
+
+				<div class="footer-col">
+					<h3>Quick Links</h3>
+					<li><a href="login_form.php.php">Student Login</a></li>
+					<li><a href="register_form.php">Student Registration</a></li>
+					<li><a href="time table.html">Time Table</a></li>
+					<li><a href="tutorial.html">Tutorials</a></li>
+				</div>
+
+				<div class="footer-col">
+					<h3>Contact</h3>
+					<li>0711325731</li>
+					<li>0256734598</li>
+					<li><a href="mailto:educa@gmail.com">educa@gmail.com</a></li>
+					<li><a href="contact.html">Educa-Anuradhapura</a></li>
+
+				</div>
+
+				<div class="footer-col">
+					<h3>News Letter</h3>
+					<p>Enter your email address or phone number <br>to get the latest information.</p>
+					<br>
+					<div class="subscribe">
+						<input type="text" placeholder="Enter your Email address" id="footer-suscribe-text">
+						<input type="submit" value="SUBSCRIBE" id="footer-subscribe-btn">
+
+					</div>
+				</div>
+
+				<div class="copyright">
+					<p>Copyright &copy;2022 All Rights Reserved by <a href="index page.html">Educa </p>
+					<div class="icons">
+						<a href="#"><i class="fa fa-facebook-official"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+
+					</div>
+				</div>
+
+			</footer>
+
+
+		</section>
+
+
+	</body>
+
+</html>

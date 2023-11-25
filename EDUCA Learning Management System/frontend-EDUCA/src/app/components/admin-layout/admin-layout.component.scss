@@ -1,0 +1,74 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+.sidenav a.active {
+  background-color: #f9004d;
+  color: white;
+}
+
+.sidenav a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #b5b5b5;
+  display: block;
+  transition: 0.3s;
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+.logo{
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+
+.logout-btn{
+  margin: 10px;
+  float: right;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #f9004d;
+
+
+
+}
+
+.logout-btn:hover{
+  background-color: black;
+  border: none;
+}
+
+.data-page{
+  margin-left: 230px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-right: 25px;
+}
+
+.fa{
+  margin-right:5px;
+}

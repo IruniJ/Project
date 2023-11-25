@@ -1,0 +1,105 @@
+
+
+    <span *ngIf="pageType=='edit'">
+      <h3>Edit Student</h3>
+    </span>
+
+    <span *ngIf="pageType=='new'">
+      <h3>New Student</h3>
+    </span>
+
+
+
+    <form [formGroup]="studentForm">
+      <div class="mb-3">
+        <label  class="form-label">Student Name</label>
+        <input  class="form-control"  placeholder="Student Name" formControlName="studentName">
+      </div>
+
+      <div class="mb-3">
+        <label  class="form-label">Address</label>
+        <textarea class="form-control"  placeholder="Address" formControlName="address"></textarea>
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <div class="mb-3">
+          <label  class="form-label">City</label>
+          <input  class="form-control"  placeholder="City" formControlName="city">
+        </div>
+
+        <div>
+          <div>
+            <label  class="form-label">Gender</label>
+            <select class="form-select" aria-label="Default select example" formControlName="gender">
+
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label  class="form-label">Age</label>
+          <input  class="form-control"  placeholder="Age" formControlName="age">
+        </div>
+
+
+      </div>
+
+      <div class="mb-3">
+        <label  class="form-label">Email</label>
+        <input  class="form-control"  placeholder="Email" formControlName="email">
+      </div>
+
+      <div class="mb-3">
+        <label  class="form-label">Mobile Number</label>
+        <input  class="form-control"  placeholder="Mobile Number" formControlName="mobileNumber">
+      </div>
+
+
+      <div>
+        <div>
+          <label  class="form-label">Subject</label>
+          <select class="form-select" aria-label="Default select example">
+
+            <option value="1">Science</option>
+            <option value="2">Mathematics</option>
+            <option value="3">English</option>
+            <option value="4">LIT</option>
+
+          </select>
+        </div>
+      </div>
+
+
+      <div>
+        <div>
+          <label  class="form-label">Grade</label>
+          <select class="form-select" aria-label="Default select example">
+
+            <option value="1">Grade 06</option>
+            <option value="2">Grade 07</option>
+            <option value="3">Grade 08</option>
+            <option value="4">Grade 09</option>
+
+          </select>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <div>
+        <button type="button" class="btn btn-dark save-btn" (click)="saveData()">
+          <p *ngIf="pageType=='edit'">
+            Update
+          </p>
+
+          <p *ngIf="pageType=='new'">
+            Save
+          </p>
+        </button>
+      </div>
+    </form>
+
+
